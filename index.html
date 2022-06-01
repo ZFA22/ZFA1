@@ -1,375 +1,100 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <!--
-    Modified from the Debian original for Ubuntu
-    Last updated: 2016-11-16
-    See: https://launchpad.net/bugs/1288690
-  -->
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Apache2 Ubuntu Default Page: It works</title>
-    <style type="text/css" media="screen">
-  * {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
-
-  body, html {
-    padding: 3px 3px 3px 3px;
-
-    background-color: #D8DBE2;
-
-    font-family: Verdana, sans-serif;
-    font-size: 11pt;
-    text-align: center;
-  }
-
-  div.main_page {
-    position: relative;
-    display: table;
-
-    width: 800px;
-
-    margin-bottom: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 0px 0px 0px;
-
-    border-width: 2px;
-    border-color: #212738;
-    border-style: solid;
-
-    background-color: #FFFFFF;
-
-    text-align: center;
-  }
-
-  div.page_header {
-    height: 99px;
-    width: 100%;
-
-    background-color: #F5F6F7;
-  }
-
-  div.page_header span {
-    margin: 15px 0px 0px 50px;
-
-    font-size: 180%;
-    font-weight: bold;
-  }
-
-  div.page_header img {
-    margin: 3px 0px 0px 40px;
-
-    border: 0px 0px 0px;
-  }
-
-  div.table_of_contents {
-    clear: left;
-
-    min-width: 200px;
-
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.table_of_contents_item {
-    clear: left;
-
-    width: 100%;
-
-    margin: 4px 0px 0px 0px;
-
-    background-color: #FFFFFF;
-
-    color: #000000;
-    text-align: left;
-  }
-
-  div.table_of_contents_item a {
-    margin: 6px 0px 0px 6px;
-  }
-
-  div.content_section {
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.content_section_text {
-    padding: 4px 8px 4px 8px;
-
-    color: #000000;
-    font-size: 100%;
-  }
-
-  div.content_section_text pre {
-    margin: 8px 0px 8px 0px;
-    padding: 8px 8px 8px 8px;
-
-    border-width: 1px;
-    border-style: dotted;
-    border-color: #000000;
-
-    background-color: #F5F6F7;
-
-    font-style: italic;
-  }
-
-  div.content_section_text p {
-    margin-bottom: 6px;
-  }
-
-  div.content_section_text ul, div.content_section_text li {
-    padding: 4px 8px 4px 16px;
-  }
-
-  div.section_header {
-    padding: 3px 6px 3px 6px;
-
-    background-color: #8E9CB2;
-
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-  }
-
-  div.section_header_red {
-    background-color: #CD214F;
-  }
-
-  div.section_header_grey {
-    background-color: #9F9386;
-  }
-
-  .floating_element {
-    position: relative;
-    float: left;
-  }
-
-  div.table_of_contents_item a,
-  div.content_section_text a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  div.table_of_contents_item a:link,
-  div.table_of_contents_item a:visited,
-  div.table_of_contents_item a:active {
-    color: #000000;
-  }
-
-  div.table_of_contents_item a:hover {
-    background-color: #000000;
-
-    color: #FFFFFF;
-  }
-
-  div.content_section_text a:link,
-  div.content_section_text a:visited,
-   div.content_section_text a:active {
-    background-color: #DCDFE6;
-
-    color: #000000;
-  }
-
-  div.content_section_text a:hover {
-    background-color: #000000;
-
-    color: #DCDFE6;
-  }
-
-  div.validator {
-  }
-    </style>
-  </head>
-  <body>
-    <div class="main_page">
-      <div class="page_header floating_element">
-        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
-        <span class="floating_element">
-          Apache2 Ubuntu Default Page
-        </span>
-      </div>
-<!--      <div class="table_of_contents floating_element">
-        <div class="section_header section_header_grey">
-          TABLE OF CONTENTS
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#about">About</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#changes">Changes</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#scope">Scope</a>
-        </div>
-        <div class="table_of_contents_item floating_element">
-          <a href="#files">Config files</a>
-        </div>
-      </div>
--->
-      <div class="content_section floating_element">
-
-
-        <div class="section_header section_header_red">
-          <div id="about"></div>
-          It works!
-        </div>
-        <div class="content_section_text">
-          <p>
-                This is the default welcome page used to test the correct 
-                operation of the Apache2 server after installation on Ubuntu systems.
-                It is based on the equivalent page on Debian, from which the Ubuntu Apache
-                packaging is derived.
-                If you can read this page, it means that the Apache HTTP server installed at
-                this site is working properly. You should <b>replace this file</b> (located at
-                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
-          </p>
-
-
-          <p>
-                If you are a normal user of this web site and don't know what this page is
-                about, this probably means that the site is currently unavailable due to
-                maintenance.
-                If the problem persists, please contact the site's administrator.
-          </p>
-
-        </div>
-        <div class="section_header">
-          <div id="changes"></div>
-                Configuration Overview
-        </div>
-        <div class="content_section_text">
-          <p>
-                Ubuntu's Apache2 default configuration is different from the
-                upstream default configuration, and split into several files optimized for
-                interaction with Ubuntu tools. The configuration system is
-                <b>fully documented in
-                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
-                documentation. Documentation for the web server itself can be
-                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
-                package was installed on this server.
-
-          </p>
-          <p>
-                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
-          </p>
-          <pre>
-/etc/apache2/
-|-- apache2.conf
-|       `--  ports.conf
-|-- mods-enabled
-|       |-- *.load
-|       `-- *.conf
-|-- conf-enabled
-|       `-- *.conf
-|-- sites-enabled
-|       `-- *.conf
-          </pre>
-          <ul>
-                        <li>
-                           <tt>apache2.conf</tt> is the main configuration
-                           file. It puts the pieces together by including all remaining configuration
-                           files when starting up the web server.
-                        </li>
-
-                        <li>
-                           <tt>ports.conf</tt> is always included from the
-                           main configuration file. It is used to determine the listening ports for
-                           incoming connections, and this file can be customized anytime.
-                        </li>
-
-                        <li>
-                           Configuration files in the <tt>mods-enabled/</tt>,
-                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
-                           particular configuration snippets which manage modules, global configuration
-                           fragments, or virtual host configurations, respectively.
-                        </li>
-
-                        <li>
-                           They are activated by symlinking available
-                           configuration files from their respective
-                           *-available/ counterparts. These should be managed
-                           by using our helpers
-                           <tt>
-                                a2enmod,
-                                a2dismod,
-                           </tt>
-                           <tt>
-                                a2ensite,
-                                a2dissite,
-                            </tt>
-                                and
-                           <tt>
-                                a2enconf,
-                                a2disconf
-                           </tt>. See their respective man pages for detailed information.
-                        </li>
-
-                        <li>
-                           The binary is called apache2. Due to the use of
-                           environment variables, in the default configuration, apache2 needs to be
-                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
-                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
-                           default configuration.
-                        </li>
-          </ul>
-        </div>
-
-        <div class="section_header">
-            <div id="docroot"></div>
-                Document Roots
-        </div>
-
-        <div class="content_section_text">
-            <p>
-                By default, Ubuntu does not allow access through the web browser to
-                <em>any</em> file apart of those located in <tt>/var/www</tt>,
-                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
-                directories (when enabled) and <tt>/usr/share</tt> (for web
-                applications). If your site is using a web document root
-                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
-                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
-            </p>
-            <p>
-                The default Ubuntu document root is <tt>/var/www/html</tt>. You
-                can make your own virtual hosts under /var/www. This is different
-                to previous releases which provides better security out of the box.
-            </p>
-        </div>
-
-        <div class="section_header">
-          <div id="bugs"></div>
-                Reporting Problems
-        </div>
-        <div class="content_section_text">
-          <p>
-                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
-                Apache2 package with Ubuntu. However, check <a
-                href="https://bugs.launchpad.net/ubuntu/+source/apache2"
-                rel="nofollow">existing bug reports</a> before reporting a new bug.
-          </p>
-          <p>
-                Please report bugs specific to modules (such as PHP and others)
-                to respective packages, not to the web server itself.
-          </p>
-        </div>
-
-
-
-
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Policy</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+      
+    <img src="images/Vertical Stacked Logo.jpg" alt="Vertical%20Stacked%20Logo" width="200" height="200" border-radius: %>
+     
+
+
+
+
+    <body>
+        <div style = "position:relative; left:80px; top:2px;">
+           
+         
+             
+        <ol>
+        <li>You acknowledge <br><br>
+            
+             
+            <ol>
+            <li>that the Service may not be uninterrupted or error-free;</li>
+            <li>that your device may be exposed to viruses or other harmful applications through the Service;</li>
+                <li>that the <em>Zakat Foundation of America</em> does not guarantee the security of the Service and that unauthorized third parties may access your computer<br>or files or otherwise monitor your connection;</li>
+            <li>that the <em>Zakat Foundation of America’s</em> ability to provide the Service without charge is based on the limited warranty, disclaimer and limitation<br>of liability specified in this Section and it would require a substantial charge if any of these provisions were unenforceable;</li>
+            <li>that the <em>Zakat Foundation of America</em> can at any point block access to Internet Services that they deem violate the acceptable terms of use outlined in 2.1.</li>
+                
+            </ol>
+                 
+        </li>
+              
+            <br><br>
+            
+    The service and any products or services provided on or in connection with the service are provided on an "as is", "as available" basis without warranties of any kind.<br>All warranties, conditions, representations, indemnities and guarantees with respect to the content or service and the operation, capacity, speed, functionality, qualifications,<br>or capabilities of the services, goods or personnel resources provided hereunder, whether express or implied, arising by law, custom, prior oral or written statements by<br>the <em>Zakat Foundation of America</em>, or otherwise (including, but not limited to any warranty of satisfactory quality, merchantability, fitness for particular purpose,<br>title and non-infringement) are hereby overridden, excluded and disclaimed.
+            <br><br><br><br>
+        
+        <li>ACCEPTABLE USE OF THE SERVICE<br><br>
+            <ul>
+                <li>2.1 You must not use the Service to access Internet Services, or send or receive e-mails, which: <br><br>
+                     
+                    <ul>
+                        <li>2.1.1 are defamatory, threatening, intimidating or which could be classed as harassment;</li>
+                        <li>2.1.2 contain obscene, profane or abusive language or material; </li>
+                        <li>2.1.3 contain pornographic material (that is text, pictures, films, video clips of a sexually explicit or arousing nature); </li>
+                        <li>2.1.4 contain offensive or derogatory images regarding sex, race, religion, colour, origin, age, physical or mental disability, medical condition or sexual orientation;</li>
+                        <li>2.1.5 contain material which infringe third party’s rights (including intellectual property rights)</li>
+                        <li>2.1.6 in our reasonable opinion may adversely affect the manner in which we carry out our work;</li>
+                        <li>2.1.7 are bulk and/or commercial messages;</li>
+                        <li>2.1.8 contain forged or misrepresented message headers, whether in whole or in part, to mask the originator of the message;</li>
+                        <li>2.1.9 are activities that invade another’s privacy; or</li>
+                        <li>2.1.10 are otherwise unlawful or inappropriate;</li>
+                    </ul>
+                     <br>
+                </li>
+                
+                <li>2.2 Music, video, pictures, text and other content on the internet are copyright works and you should not download, alter, e-mail or otherwise use such content unless<br>certain that the owner of such works has authorized its use by you</li>
+                <li>2.3 You must not use the service to access illegally or without authorization computers, accounts, equipment or networks belonging to another party, or attempting<br>to penetrate security measures of another system. This includes any activity that may be used as a precursor to an attempted system penetration, including, but not<br>limited to, port scans, stealth scans, or other information gathering activity.</li>
+                <li>2.4 You must not use the service to distribute Internet Viruses, Trojan Horses, or other destructive software.</li>
+                <li>2.5 The Service is intended for the Zakat Foundation of America guest use only. Access to this Service must not be used for commercial activity.</li>
+                <li>2.6 We may terminate or temporarily suspend the Service if we reasonably believe that you are in breach of<br>any provisions of this agreement including but not limited to clauses 2.1 to 2.5 above.</li>
+                <li>2.7 We recommend that you do not use the service to transmit or receive any confidential information or data and should you choose to do so you do so at your own risk.</li>
+                
+            </ul>
+            <br><br>
+        <li>CRIMINAL ACTIVITY 
+             <br><br>
+                <ul>
+                    
+                    <li>3.1 You must not use the Service to engage in any activity which constitutes or is capable of constituting a criminal offence, either in the United States or in any country throughout the world.</li>
+                    <li>3.2 You agree and acknowledge that we may be required to provide assistance and information to law enforcement, governmental agencies and other authorities.</li>
+                    <li>3.3 You agree and acknowledge that we will monitor your activity while you use this service and keep a log of the Internet Protocol (“IP”) addresses<br>of any devices which access the Service, the times when they have accessed the Service and the activity associated with that IP address.</li>
+                    <li>3.4 You further agree we are entitled to co-operate with law enforcement authorities and rights-holders in the investigation of any<br>suspected or alleged illegal activity by you which may include, but is not limited to, disclosure of such information as we have<br>(whether pursuant to clause 3.3 or otherwise), and are entitled to provide by law, to law enforcement authorities or rights-holders.</li>
+            
+                </ul>
+             <br><br>
+        </li>
+        <li>OTHER TERMS 
+        <br><br>
+            <ul>
+                <li>4.1 Under no circumstances will the <em>Zakat Foundation of America</em>, their suppliers or licensors, or their respective officers, directors, employees, agents, and affiliates<br>be liable for consequential, indirect, special, punitive or incidental damages, whether foreseeable or unforeseeable, based on claims of the Guest or its<br>appointees (including, but not limited to, unauthorized access, damage, or theft of your system or data, claims for loss of goodwill, claims for loss<br>of data, use of or reliance on the service, stoppage of other work or impairment of other assets, or damage caused to equipment or programs from<br>any virus or other harmful application), arising out of breach or failure of express or implied warranty, breach of contract, misrepresentation,<br>negligence, strict liability in tort or otherwise.</li>
+                <li>4.2 You agree to indemnify and hold harmless the <em>Zakat Foundation of America</em> and its suppliers, licensors, officers, directors, employees, agents and affiliates from any claim,<br>liability, loss, damage, cost, or expense (including without limitation reasonable attorney's fees) arising out of or related to your use of the Service, any materials downloaded<br>or uploaded through the Service, any actions taken by you in connection with your use of the Service, any violation of any third party's rights or an violation of law or<br>regulation, or any breach of this agreement. This Section will not be construed to limit or exclude any other claims or remedies that the<br><em>Zakat Foundation of America</em> may assert under this Agreement or by law.</li>
+                <li>4.3 This Agreement shall not be construed as creating a partnership, joint venture, agency relationship or granting a franchise between the parties.<br>Except as otherwise provided above, any waiver, amendment or other modification of this Agreement will not be effective unless in writing<br>and signed by the party against whom enforcement is sought. If any provision of this Agreement is held to be unenforceable, in whole<br>or in part, such holding will not affect the validity of the other provisions of this Agreement.</li>
+                <li>4.4 The <em>Zakat Foundation of America’</em> performance of this Agreement is subject to existing laws and legal process, and nothing contained in this Agreement shall<br>waive or impede the <em>Zakat Foundation of America’</em> right to comply with law enforcement requests or requirements relating to your use of this Service or<br>information provided to or gathered by the <em>Zakat Foundation of America</em> with respect to such use. This Agreement constitutes the complete and entire<br>statement of all terms, conditions and representations of the agreement between you and the <em>Zakat Foundation of America</em> with respect to its<br>subject matter and supersedes all prior writings or understanding.</li>
+            </ul>
+        </li>
+             
+        </ol>
+        <br>
+        <br>
+        
+    By agreeing to the terms of service, I confirm that I accept these terms and conditions as the basis of my use of the wireless internet access provided.<br>
+        <br>
+        <br>
     </div>
-    <div class="validator">
-    </div>
-  </body>
+    </body>
 </html>
-

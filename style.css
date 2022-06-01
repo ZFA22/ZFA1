@@ -1,0 +1,15 @@
+img {
+    border-radius: 75%;
+    position: absolute;
+    right: 100px;
+}
+    
+div {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #4CAF50;
+}
+    
+
+  
+
